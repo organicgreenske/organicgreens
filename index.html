@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agribusiness Portal - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome to Agribusiness Portal</h2>
+        <form id="login-form">
+            <input type="text" name="username" id="username" placeholder="Username" required><br><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+            <label for="role">Role: </label>
+            <select name="role" id="role" required>
+                <option value="farmer">Farmer</option>
+                <option value="agrovet">Agrovet</option>
+                <option value="customer">Customer</option>
+            </select><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
