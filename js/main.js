@@ -79,4 +79,43 @@ window.onload = function () {
         }
     }
 };
+   // Get the modal and button elements
+   const modal = document.getElementById('updateHarvestModal');
+   const updateBtn = document.getElementById('updateHarvestBtn');
+   const closeModal = document.getElementById('closeModal');
+   const updateForm = document.getElementById('updateHarvestForm');
+
+   // Open the modal when the "Update Harvest" button is clicked
+   updateBtn.onclick = function() {
+       modal.style.display = "block";
+   }
+
+   // Close the modal when the user clicks on <span> (x)
+   closeModal.onclick = function() {
+       modal.style.display = "none";
+   }
+
+   // Close the modal if the user clicks anywhere outside the modal
+   window.onclick = function(event) {
+       if (event.target === modal) {
+           modal.style.display = "none";
+       }
+   }
+
+   // Handle form submission (for now, just log the data)
+   updateForm.addEventListener('submit', function(event) {
+       event.preventDefault(); // Prevent form submission
+
+       const plantType = document.getElementById('plant-type').value;
+       const quantityHarvested = document.getElementById('quantity-harvested').value;
+       const quantityExpected = document.getElementById('quantity-expected').value;
+
+       // You can handle form data here (send it to the server, or save in localStorage)
+       console.log('Plant Type:', plantType);
+       console.log('Quantity Harvested:', quantityHarvested);
+       console.log('Quantity Expected:', quantityExpected);
+
+       // Close the modal after form submission
+       modal.style.display = "none";
+   });
 

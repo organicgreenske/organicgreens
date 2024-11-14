@@ -16,34 +16,36 @@
             <div class="dashboard-card">
                 <h4>Farmers List</h4>
                 <ul>
-                    
-                    <li></li>
-                    
+                    <li>Farmer 1</li>
+                    <li>Farmer 2</li>
+                    <li>Farmer 3</li>
+                    <!-- Add more farmers here -->
                 </ul>
-                <p>View and allocate fertilizers to farmers.</p>
-                <table>
-                    <tr>
-                        <th>Farmer.</th>
-
-                        <th>Fertilizer Type.</th>
-
-                        <th>Quantity Allocated.</th>
-
-                        <th>Quantity Received.</th>
-                    </tr>
-                    
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    
-                </table>
             </div>
+
             <div class="dashboard-card">
                 <h4>Fertilizer Allocations</h4>
-                <p>Manage fertilizer distribution.</p>
+                <p><strong>View and allocate fertilizers to farmers</strong></p>
+                
+                <!-- Table for inputting fertilizer allocation details -->
+                <table>
+                    <tr>
+                        <th>Farmer</th>
+                        <th>Fertilizer Type</th>
+                        <th>Quantity Allocated (kg)</th>
+                        <th>Quantity Received (kg)</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="farmer" placeholder="Enter Farmer Name"></td>
+                        <td><input type="text" name="fertilizer-type" placeholder="Enter Fertilizer Type"></td>
+                        <td><input type="number" name="quantity-allocated" placeholder="Quantity Allocated"></td>
+                        <td><input type="number" name="quantity-received" placeholder="Quantity Received"></td>
+                    </tr>
+                    <!-- You can add more rows as needed -->
+                </table>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Allocation</button>
             </div>
         </div>
     </div>

@@ -36,8 +36,30 @@
                     </tr>
                     
                 </table>
-                <p>Update your harvest information.</p>
+              
             </div>
+        </div>
+    </div>
+    <p><strong>YOUR HARVEST INFORMATION.</strong></p>
+                  <!-- Button to open the modal form -->
+                  <button id="updateHarvestBtn">Update Harvest</button>
+        <!-- The Modal for updating harvest -->
+    <div id="updateHarvestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h3>Update Harvest Information</h3>
+            <form id="updateHarvestForm">
+                <label for="plant-type">Plant Type:</label>
+                <input type="text" id="plant-type" name="plant-type" required>
+
+                <label for="quantity-harvested">Quantity Harvested (kg):</label>
+                <input type="number" id="quantity-harvested" name="quantity-harvested" required>
+
+                <label for="quantity-expected">Quantity Expected (kg):</label>
+                <input type="number" id="quantity-expected" name="quantity-expected" required>
+
+                <button type="submit">Update</button>
+            </form>
         </div>
     </div>
     <footer>
